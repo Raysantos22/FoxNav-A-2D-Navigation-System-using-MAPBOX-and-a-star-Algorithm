@@ -1,0 +1,5 @@
+<!-- res/values/dimens.xml -->
+<resources>
+    <dimen name="grid_width">30dp</dimen> <!-- Define width of each grid cell -->
+    <dimen name="grid_height">30dp</dimen>
+</resources>

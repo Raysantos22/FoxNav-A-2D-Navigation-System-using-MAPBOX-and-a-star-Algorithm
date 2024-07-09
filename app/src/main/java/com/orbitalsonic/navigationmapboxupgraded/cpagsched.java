@@ -1,0 +1,14 @@
+package com.orbitalsonic.navigationmapboxupgraded;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+
+public class cpagsched extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_cpagsched);
+    }
+}

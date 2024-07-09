@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Lucinda">
+
+    <HorizontalScrollView
+        android:id="@+id/scrollViewHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginStart="-2dp"
+        android:layout_marginTop="-19dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="88dp">
+
+        <ScrollView
+            android:id="@+id/scrollViewVertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <GridLayout
+                android:id="@+id/gridLayout"
+                android:layout_width="600dp"
+                android:layout_height="950dp"
+                android:columnCount="22"
+                android:rowCount="30" />
+
+        </ScrollView>
+    </HorizontalScrollView>
+
+    <RelativeLayout
+
+    android:id="@+id/buttons_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+        <!-- Buttons -->
+        <Button
+            android:id="@+id/findPathButton"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:background="#AB1616"
+            android:text="Find Path" />
+
+
+        <Button
+            android:id="@+id/resetButton"
+            android:layout_width="81dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="85dp"
+            android:text="Reset"
+            android:background="#AB1616" />
+
+
+        <Button
+            android:id="@+id/evacluc"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="170dp"
+            android:background="#AB1616"
+            android:onClick="evacluc1"
+            android:text="evacuation" />
+        <CheckBox
+            android:id="@+id/checkBox_tile_walkable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="305dp"
+            android:checked="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
